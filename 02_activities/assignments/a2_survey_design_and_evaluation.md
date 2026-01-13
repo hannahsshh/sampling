@@ -25,7 +25,7 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 2. Sample size
 3. Target population
 4. Sampling frame
-5. Survey mode(s) 
+5. Survey mode(s)
 6. Timeline
 7. Response rate
 8. Weights
@@ -34,6 +34,7 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 11. Sources of error
 12. Limitations, known biases, etc
 13. Link to documentation and any additional sources used
+
 
 
 # Your Changes
@@ -69,10 +70,61 @@ Your 5-10 question survey:
 ## Part B - Survey Evaluation:
 
 Identify and describe survey features:
-
-```
 write your answer here
-```
+
+1. Sample type
+    Two-phase, stratified, probability sample based on the 2021 Census long-form questionnaire sample
+
+2. Sample size:
+    80,000 (60,000 regular sample; 20,000 oversample)
+
+3. Target population: 
+    all persons 15 years if age and older in Canada, excluding residents of the Yukon, Northwest Territories, Nunavut, and of First Nations reserves
+
+4. Sampling frame:
+    There are multiple sampling phases for the survey.
+        Phase 1: a sample of households is selected to receive the long-form census questionnaire in the 2021 Population Census (around 1 in 4 households). The sampling frame is the list of households.
+
+        Phase 2: individuals are selected for the survey. The sampling frame is all individuals aged 15+ in private households that were selected for the long-form questionnaire in the 2021 Population Census. 
+
+5. Survey mode(s):
+    Computer-assisted telephone interview or self-completed electronic questionnaire
+
+6. Timeline:
+    - Data collection period 2023-09-15 to 2024-03-30
+    - Survey takes approximately 45 min to complete
+
+7. Response rate:
+    Average 40.9% (42.2% regular; 37.1% oversample)
+
+8. Weights:
+   - The weight for respondents that are not 'rejected' and are not volunteers is multiplied by a factor to adjust for the 'rejecting' of a proportion of respondents that are non-volunteers
+   - Weights were adjusted so that the weighted income distribution matched the 2022 Canadian Income Survey (CIS) distribution by province
+   - Created bootstrap weights for design-based variance estimation
+
+9. Data processing:
+    The survey used the Social Survey Processing Environment (SSPE), a set of generalized processing steps and utilities. The general process includes the following steps: data collection, cleaning, recoding, flow edits, coding, edits & imputation, derived variables, final processing.
+
+10. Cleaning, imputation, etc:
+    Donor imputation (donor records selected through a score function to impute missing values). Mean imputation where donor imputation could not be used. Carried about imputation in 4 blocks (1. personal income and family income; 2. variables related to donations; 3. formal volunteering variable; 4. informal volunteering variables)
+
+11. Sources of error:
+    - non-sampling error
+    - coverage error 
+    - processing errors
+
+12. Limitations, known biases, etc:
+    - non-response bias
+    - social desirability bias
+    
+13. Link to documentation and any additional sources used:
+    - https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4430
+    - https://www150.statcan.gc.ca/n1/en/catalogue/45250011
+    - https://www150.statcan.gc.ca/n1/pub/45-25-0001/index-eng.htm
+    - https://www150.statcan.gc.ca/n1/pub/89-653-x/2018001/dp-td-eng.htm 
+
+
+
 
 ## Rubric
 
