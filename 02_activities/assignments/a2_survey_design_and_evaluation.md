@@ -25,7 +25,7 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 2. Sample size
 3. Target population
 4. Sampling frame
-5. Survey mode(s) 
+5. Survey mode(s)
 6. Timeline
 7. Response rate
 8. Weights
@@ -36,43 +36,130 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 13. Link to documentation and any additional sources used
 
 
+
 # Your Changes
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `#1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of the survey is to identify the primary drivers of entry- and lower-level employee turnover within the company, towards the development of strategies to improve employee retention. The survey will provide insight to the specific components of work (e.g. compensation, management style, workload) that the company may modulate to reduce turnover in the positions identified as being most highly impacted.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target population: the target is all individuals employed by the company in the last year at an entry- or lower-level position (defined by internal company designations as "junior" or "L1"), including employees that have left the company voluntarily (resigned) within the last six months.
+
+Sampling frame: all the employees meeting the defined criteria of the target population that HR has contact information for and consent to contact. This would include all current "Junior"/"L1" employees and employees that have recently left (within 6 months) that had consented to follow-up contact from the company at the time of leaving.
+
+Sampling units: individual employees (drawn from the HR list of current employees and those that have recently left with consent to contact)
+
+Observational units: individual employees
+
+The overall sampling strategy would be to administer the survey via email to the all the current and former employees meeting the described criteria. The survey would be confidential and no individual responses would be shared with managers. Current employees would be directed to answer based on their current position, former employees would be direct to answer for their position immediately prior to leaving the company. Profile information, such as department and years in the role, would be collected to ensure feedback can be understood (i.e. feedback from employees in the Finance department may be different from those in Engineering, and these differences must be collected so solutions can be designed appropriately).
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. My workload is/was manageable given the time and resources available
+    Rate 1 strongly disagree ... 5 strongly agree
+
+2. My compensation (salary, bonuses, benefits) is/was reasonable for my position in the current market
+    Rate 1 strongly disagree ... 5 strongly agree
+
+3. My manager does/did provide clear expectations for my work 
+    Rate 1 strongly disagree ... 5 strongly agree
+
+4. I feel/felt comfortable seeking assistance from my manager when needed
+    Rate 1 strongly disagree ... 5 strongly agree
+
+5. I feel/felt respected and included in my team
+    Rate 1 strongly disagree ... 5 strongly agree
+
+6. I have/had access to professional development opportunities (e.g. training, mentorship, stretch tasks) in my role
+    Rate 1 strongly disagree ... 5 strongly agree
+
+7. The company's onsite/hybrid work expectations work/worked well for me
+    Rate 1 strongly disagree ... 5 strongly agree
+
+8. For current employees, how satisfied are you with your current job 
+    Rate 1 very dissatisfied ... 5 very satisfied 
+
+9. For former employees, what is your primary reason for leaving (select one option)
+    a. Workload
+    b. Compensation/benefits
+    c. Quality of management/leadership
+    d. Role fit
+    e. Culture/team dynamics
+    f. Limited growth/advancement
+    g. Location/commute 
+    h. Another offer
+    i. Personal reasons (non-work)
+    j. Other (please specify -- *text box*)
+    
+
 ```
 
 ## Part B - Survey Evaluation:
 
 Identify and describe survey features:
-
-```
 write your answer here
-```
+
+1. Sample type
+    Two-phase, stratified, probability sample based on the 2021 Census long-form questionnaire sample
+
+2. Sample size:
+    80,000 (60,000 regular sample; 20,000 oversample)
+
+3. Target population: 
+    all persons 15 years if age and older in Canada, excluding residents of the Yukon, Northwest Territories, Nunavut, and of First Nations reserves
+
+4. Sampling frame:
+    There are multiple sampling phases for the survey.
+        Phase 1: a sample of households is selected to receive the long-form census questionnaire in the 2021 Population Census (around 1 in 4 households). The sampling frame is the list of households.
+
+        Phase 2: individuals are selected for the survey. The sampling frame is all individuals aged 15+ in private households that were selected for the long-form questionnaire in the 2021 Population Census. 
+
+5. Survey mode(s):
+    Computer-assisted telephone interview or self-completed electronic questionnaire
+
+6. Timeline:
+    - Data collection period 2023-09-15 to 2024-03-30
+    - Survey takes approximately 45 min to complete
+
+7. Response rate:
+    Average 40.9% (42.2% regular; 37.1% oversample)
+
+8. Weights:
+   - The weight for respondents that are not 'rejected' and are not volunteers is multiplied by a factor to adjust for the 'rejecting' of a proportion of respondents that are non-volunteers
+   - Weights were adjusted so that the weighted income distribution matched the 2022 Canadian Income Survey (CIS) distribution by province
+   - Created bootstrap weights for design-based variance estimation
+
+9. Data processing:
+    The survey used the Social Survey Processing Environment (SSPE), a set of generalized processing steps and utilities. The general process includes the following steps: data collection, cleaning, recoding, flow edits, coding, edits & imputation, derived variables, final processing.
+
+10. Cleaning, imputation, etc:
+    Donor imputation (donor records selected through a score function to impute missing values). Mean imputation where donor imputation could not be used. Carried about imputation in 4 blocks (1. personal income and family income; 2. variables related to donations; 3. formal volunteering variable; 4. informal volunteering variables)
+
+11. Sources of error:
+    - non-sampling error
+    - coverage error 
+    - processing errors
+
+12. Limitations, known biases, etc:
+    - non-response bias
+    - social desirability bias
+    
+13. Link to documentation and any additional sources used:
+    - https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4430
+    - https://www150.statcan.gc.ca/n1/en/catalogue/45250011
+    - https://www150.statcan.gc.ca/n1/pub/45-25-0001/index-eng.htm
+    - https://www150.statcan.gc.ca/n1/pub/89-653-x/2018001/dp-td-eng.htm 
+
+
+
 
 ## Rubric
 
